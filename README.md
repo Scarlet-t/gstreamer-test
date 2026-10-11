@@ -1,11 +1,10 @@
-the robotics team's cam system is currently windows-only and i have a macbook so this is part of my attempt to port it to mac.  
-  
+The robotics team's camera system is currently windows-only. I have a macbook and am sick of using vms. This is a small step in my attempt to port it to mac.  
 
-this project has me setting up a gstreamer project, with a requirements.txt file that i can use for the mac port of the cams system.  
+This test project uses gstreamer and pyqt6. Documentation for gstreamer on python is scarce. Once again, I am apart from c++ (my beloved).
   
-current setup requires creating a virtual environment. Am using Python3.14. I am sourcing gst and other pygobject modules by installing it into said virtual environment. The PyPI install would be "gstreamer-bundle" (already included in requirements.txt). 
+My setup uses a virtual environment. Am using Python3.14. Requirements.txt is included. 
 
-I am unsure if this may work on Linux environments. I will have to investigate that further, eventually, though I can't see why it wouldn't work (With some tweaks), at least with the dependencies I'm currently using.
+I am unsure if this would work on Linux environments. I may look into that eventually. It *should* work with some tweaks to the sink/source configs, I think.
 
 ## MAC/LINUX config differences:
 ### Video sink:
